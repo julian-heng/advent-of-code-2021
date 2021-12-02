@@ -1,7 +1,8 @@
 #!/usr/bin/env sh
 
 
-main() {
+main()
+{
     printf -v day "%0.2d" "${1}"
     src_filename="${day}/day${day}.py"
     sample_input_filename="${day}/sample"
