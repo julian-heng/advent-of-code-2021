@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import sys
+
 
 def main(fname):
     with open(fname) as f:
@@ -39,6 +41,4 @@ def solve2(l):
 
 
 if __name__ == "__main__":
-    main("sample")
-    print()
-    main("input")
+    main(sys.argv[1] if len(sys.argv) > 1 else "input")
