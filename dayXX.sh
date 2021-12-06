@@ -3,12 +3,12 @@
 
 main()
 {
-    printf -v day "%0.2d" "${1}"
+    printf -v day "%02d" "${1}"
     src_filename="${day}/day${day}.py"
     sample_input_filename="${day}/sample"
     input_filename="${day}/input"
 
-    mkdir -p "$1"
+    mkdir -p "${day}"
     cat > "${src_filename}" <<EOF
 #!/usr/bin/env python3
 
